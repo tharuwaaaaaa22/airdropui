@@ -1,0 +1,127 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #0b0b0b;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    color: gold;
+    font-size: 2.5rem;
+    margin: 1.5rem 0 0.2rem;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.points-box {
+    margin: 10px 0 20px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffd700, #b8860b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 12px gold;
+}
+
+.points-box img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px gold);
+}
+
+.tasks {
+    background-color: #141414;
+    border-radius: 20px;
+    padding: 20px;
+    width: 94%;
+    max-width: 420px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
+    margin-bottom: 100px;
+}
+
+.tasks h2 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
+
+.task {
+    background-color: #222;
+    margin: 12px 0;
+    padding: 14px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.task span {
+    color: white;
+    font-size: 1rem;
+    flex: 1 1 58%;
+    text-align: left;
+}
+
+.task button {
+    background: linear-gradient(to bottom right, #ffd700, #ffae00);
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1 1 36%;
+    margin-top: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar {
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #333;
+    z-index: 100;
+}
+
+.navbar-item {
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    flex-grow: 1;
+}
+
+.navbar-item img {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    filter: brightness(1.8) drop-shadow(0 0 2px gold);
+}
